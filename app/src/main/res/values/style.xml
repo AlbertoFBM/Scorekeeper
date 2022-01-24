@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar"/>
+
+    <style name="ScoreButtons" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/button_background</item>
+    </style>
+
+    <style name="PlusButtons" parent="ScoreButtons">
+        <item name="android:src">@drawable/ic_add_24</item>
+        <item name="android:contentDescription">@string/plusbutton</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:onClick">increaseScore</item>
+    </style>
+
+    <style name="MinusButtons" parent="ScoreButtons">
+        <item name="android:src">@drawable/ic_horizontal_rule_24</item>
+        <item name="android:contentDescription">@string/minusbutton</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:onClick">decreaseScore</item>
+    </style>
+</resources>
